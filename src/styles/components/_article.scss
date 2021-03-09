@@ -1,0 +1,26 @@
+// Section - Vítejte na Singletrail Moravský kras - front page
+
+.article {
+    margin-top: 15rem;
+    background-color: $color-container-4;
+    height: 100%;
+    &__inner {
+        width: 70%;
+        padding: 8rem 6rem 13rem;
+        margin: auto;
+        text-align: center;
+        display: grid;
+        place-items: center;
+        &_pomoc {
+            padding: 8rem 6rem 8rem;
+            margin-bottom: 20rem;
+            p {
+                padding-bottom: 2rem;
+            }
+        }
+    }
+    p {
+        margin: auto;
+        max-width: 80rem;
+    }
+}

@@ -1,0 +1,59 @@
+// Front page img - forest
+.full-screen_img {
+    background-repeat: no-repeat;
+    background-position: top;
+    max-width: $width-full-screen;
+    height: 100%;
+    margin: auto;
+
+    &__index {
+        background-image: url(../images/Single_Trail_front_page_forest.jpg);
+    }
+    &__oTrailech {
+        background-image: url(../images/Single_Trail_biker.jpg);
+        height: 108rem;
+    }
+}
+
+.gallery {
+    display: grid;
+    place-items: center;
+    padding: 20rem 10rem 10rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr auto-fit);
+    gap: 2rem 2rem;
+    grid-template-areas:
+        "img1 img3"
+        "img1 img3"
+        "img1 img3"
+        "img2 img3"
+        "img2 img3"
+        "img2 img4"
+        "img2 img4"
+        "img2 img4";
+    img {
+        box-shadow: $box-shadow;
+        width: 100%;
+    }
+}
+.img1 {
+    grid-area: img1;
+}
+.img2 {
+    grid-area: img2;
+}
+.img3 {
+    grid-area: img3;
+}
+.img4 {
+    grid-area: img4;
+}
+
+.frame__img {
+    top: 27rem;
+    right: 0;
+    margin-right: 5rem;
+    position: absolute;
+    border-radius: 1rem;
+    width: 50%;
+}

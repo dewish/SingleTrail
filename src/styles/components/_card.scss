@@ -1,0 +1,89 @@
+// Section of 3 cards with photo - Main Page
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 25%;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+
+    &__text {
+        color: $color-white;
+        background-color: rgba($color-primary, 0.7);
+        padding: 2.5rem;
+        font-size: $font-size-xs;
+
+        h3 {
+            padding-bottom: 2rem;
+            font-size: $font-size-s;
+        }
+        p {
+            line-height: 3.2rem;
+        }
+    }
+}
+
+// Section with Trail Hunter Video
+
+.info-box {
+    max-width: $width-mid-screen;
+    margin: auto;
+    padding: 15rem 5rem 0rem;
+
+    &__inner {
+        width: 62%;
+        padding: 8rem;
+        background-color: $color-container-2;
+        border-radius: 1rem;
+        box-shadow: $box-shadow;
+        h2 {
+            text-transform: uppercase;
+            color: $color-white;
+        }
+        p {
+            color: $color-white;
+            width: 62%;
+            padding-bottom: 2rem;
+        }
+        &__kras {
+            background-color: $color-container-1;
+              }
+    }
+}
+
+// Youtube video container
+
+.iframe-container {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    top: -25rem;
+    z-index: 10;
+}
+
+.iframe-container iframe {
+    border-radius: 1rem;
+    box-shadow: $box-shadow;
+    width: 55%;
+}
+
+.value {
+    display: flex;
+text-align: center;
+padding-top: 5rem;
+p {
+    padding-left: 6%;
+}
+strong {
+    font-weight: 900;
+}
+&__okruhy {
+    display: flex;
+ 
+}
+
+}

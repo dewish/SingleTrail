@@ -1,0 +1,39 @@
+body {
+    color: $color-grey-dark;
+    font-family: $font-primary;
+}
+
+.paragraph {
+    font-size: $font-size-s;
+ }
+
+.heading-primary {
+    color: $color-white;
+    font-family: $font-secondary;
+    font-size: $font-size-h1;
+    padding-top: 8%;
+}
+
+.heading-secondary {
+    font-family: $font-secondary;
+    font-size: $font-size-l;
+    padding-bottom: 3rem;
+}
+
+.heading-tertiary {
+    font-size: $font-size-m;
+    font-family: $font-secondary;
+}
+
+.heading-xxl {
+    font-size: $font-size-xxl;
+    font-family: $font-secondary;
+    padding-bottom: 6rem;
+    text-align: center;
+    &__udoli {
+        color: $color-white;
+        text-align: left;
+        padding-bottom: 4rem;
+    }
+}
+
