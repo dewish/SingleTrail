@@ -50,10 +50,17 @@
 }
 
 .frame__img {
-    top: 27rem;
+    top: 35rem;
     right: 0;
     margin-right: 5rem;
     position: absolute;
     border-radius: 1rem;
     width: 50%;
+    box-shadow: $box-shadow;
+}
+
+.trails-box__inner-img {
+    height: 100%;
+    border: 10px solid #fff;
+    box-shadow: $box-shadow;
 }

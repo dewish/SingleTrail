@@ -5,6 +5,7 @@ body {
 
 .paragraph {
     font-size: $font-size-s;
+    line-height: 2.6rem;
  }
 
 .heading-primary {
@@ -30,7 +31,7 @@ body {
     font-family: $font-secondary;
     padding-bottom: 6rem;
     text-align: center;
-    &__udoli {
+    &__trails {
         color: $color-white;
         text-align: left;
         padding-bottom: 4rem;
