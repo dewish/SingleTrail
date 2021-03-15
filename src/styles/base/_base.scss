@@ -22,14 +22,10 @@ body {
   height: max-content;
   margin: auto;
   flex-direction: column;
-  &__kras {
+  &__trails {
     max-width: $width-mid-screen;
-    padding: 10rem 5rem;
+    padding: 18rem 5rem 8rem;
     margin: auto;
     position: relative;
-  }
-  &__okruh {
-    display: flex;
-    padding: 8rem;
   }
 }

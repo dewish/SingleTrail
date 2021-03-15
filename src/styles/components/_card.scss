@@ -27,7 +27,7 @@
     }
 }
 
-// Section with Trail Hunter Video
+// Section with Trail Hunter Video + Marisnaké_údolí
 
 .info-box {
     max-width: $width-mid-screen;
@@ -52,6 +52,9 @@
         &__kras {
             background-color: $color-container-1;
         }
+        &__jedovnice {
+            background-color: $color-container-5;
+        }
     }
 }
 
@@ -69,23 +72,4 @@
     border-radius: 1rem;
     box-shadow: $box-shadow;
     width: 55%;
-}
-
-.value {
-    display: flex;
-    text-align: center;
-    padding-top: 7rem;
-    p {
-        padding-left: 6%;
-    }
-    strong {
-        font-weight: 900;
-    }
-    &__okruhy {
-        display: flex;
-        padding-top: 3rem;
-     p:not(:last-child) {
-         padding-right: 2rem;
-     }
-    }
 }
