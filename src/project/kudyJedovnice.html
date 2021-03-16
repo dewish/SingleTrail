@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <include src="project/templates/head.html"></include>
+    <title>Kudy do Jedovnice</title>
+  </head>
+  <body>
+    <include src="project/templates/navigation.html"></include>
+
+    <section class="container tabs__box">
+      <header>
+        <h1 class="heading-secondary">Kudy do Jedovnice</h1>
+        <p class="paragraph">
+          Autem, autobusem nebo vlakem. Podívejte se, kudy k nám.
+          <br />
+          K Základně Jedovnice, kterou najdete v areálu Autokempu Olšovec u
+          rybníka Olšovec v Jedovnicích, se dostanete hned několika způsoby.
+        </p>
+      </header>
+
+      <div class="tabs">
+        <div class="tabs__container">
+          <button class="btn btn__main tab tab--active" data-tab="1">
+            Autem
+          </button>
+          <button class="btn btn__main tab" data-tab="2">Autobusem</button>
+          <button class="btn btn__main tab" data-tab="3">Vlakem</button>
+          <button class="btn btn__main tab" data-tab="4">Parkování</button>
+        </div>
+        <div class="tabs__content tabs__content--1 tabs__content--active">
+          <p class="paragraph">
+            Při cestě z <strong> Brna </strong> vjeďte do Jedovnic. Na kruhovém
+            objezdu se vydejte první odbočkou. Poté odbočte doprava a řiďte se
+            podle značení na Autokemp Olšovec.<br />
+            Pokud k nám míříte <strong> od Blanska</strong>, jeďte na kruhovém
+            objezdu druhou odbočkou. Také v tomto případě pak odbočíte doprava a
+            budete se řídit značením na Autokemp Olšovec. <br />
+            Cestou <strong>od Vyškova</strong> projedete téměř celé Jedovnice.
+            Za fotbalovým hřištěm pak zahnete doleva. Dál vás opět povede
+            značení na Autokemp Olšovec.<br />
+            GPS souřadnice: 49.332799, 16.765075
+          </p>
+        </div>
+
+        <div class="tabs__content tabs__content--2">
+          <p class="paragraph">
+            Do Jedovnic jede přímá linka 201 z <strong> Brna </strong> ze Staré
+            osady. Z autobusu vystupte na zastávce Jedovnice, náměstí. Odtud se
+            po značení na Autokemp Olšovec vydejte k rybníku a na pravém břehu
+            najdete nástupní místo. <br />
+            Přímou linkou se do Jedovnic dostanete také
+            <strong> z Vyškova</strong>. Autobusem číslo 167 dojedete na
+            zastávku Jedovnice, náměstí. Odtud se po značení na Autokemp Olšovec
+            vydejte k rybníku a na pravém břehu najdete nástupní místo.
+            <br /><strong> Z Blanska</strong> se do Jedovnic dostanete linkou
+            číslo 231 nebo 167. Opět vystoupíte na zastávce Jedovnice, náměstí.
+            Odtud se po značení na Autokemp Olšovec vydáte k rybníku a na pravém
+            břehu najdete nástupní místo.<br />
+            Pro cestu z Brna nebo Vyškova do Jedovnic potřebujete jízdenku na
+            pět zón. Při cestě z Blanska vám stačí lístek na dvě zóny.
+          </p>
+        </div>
+
+        <div class="tabs__content tabs__content--3">
+          <p class="paragraph">
+            Vlaková trať do Jedovnic nevede. Vlakem proto musíte do<strong>
+              Brna, Blanska nebo Vyškova</strong
+            >, kde přestoupíte na některou z autobusových linek, které vás
+            dovezou na zastávku Jedovnice, náměstí. Odtud vás k nástupnímu místu
+            dovede značení na Autokemp Olšovec.
+          </p>
+        </div>
+
+        <div class="tabs__content tabs__content--4">
+          <p class="paragraph">
+            Projeďte kolem Autocampu Olšovec až na konec cesty před Základnu
+            Singletrailu Moravský kras, kde naleznete bezplatné parkoviště.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <include src="project/templates/footer.html"></include>
+    <script src="../tabs.js"></script>
+  </body>
+</html>
