@@ -1,0 +1,39 @@
+.tabs {
+  max-width: 100rem;
+  min-height: 32rem;
+  margin: 12rem auto 0 auto;
+  background-color: #fff;
+  box-shadow: $box-shadow;
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+  &__box {
+    padding-bottom: 30%;
+  }
+}
+
+.tab {
+  margin-right: 2.5rem;
+  transform: translateY(-100%);
+  background-color: $color-button-3;
+  &:hover {
+    background-color: lighten($color-button-3, 10%);
+  }
+}
+
+.tab--active {
+  transform: translateY(-125%);
+  background-color: saturate($color-button-3, 18%);
+}
+
+.tabs__content {
+  display: none;
+  padding: 4rem 12rem 8rem;
+  text-align: center;
+}
+
+.tabs__content--active {
+  display: grid;
+  grid-template-columns: 1fr;
+}
