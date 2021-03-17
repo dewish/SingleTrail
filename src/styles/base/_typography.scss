@@ -6,7 +6,12 @@ body {
 .paragraph {
     font-size: $font-size-s;
     line-height: 2.6rem;
- }
+    &-align {
+        text-align: center;
+        width: 55%;
+        margin: auto;
+       }
+}
 
 .heading-primary {
     color: $color-white;
@@ -19,6 +24,9 @@ body {
     font-family: $font-secondary;
     font-size: $font-size-l;
     padding-bottom: 3rem;
+    &-align {
+        text-align: center;
+    }
 }
 
 .heading-tertiary {
@@ -37,4 +45,3 @@ body {
         padding-bottom: 4rem;
     }
 }
-

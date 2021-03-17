@@ -4,15 +4,85 @@
     <include src="project/templates/head.html"></include>
     <title>Kudy do Mariánského údolí</title>
   </head>
-<body>
+  <body>
     <include src="project/templates/navigation.html"></include>
-    <header>
-      <h1 class="heading-secondary">Kudy do Mariánského údolí</h1>
-      <p class="paragraph">
-        Autem, autobusem, tramvají nebo vlakem. Podívejte se, kudy k nám.
-      </p>
-    </header>
+
+    <section class="container tabs__box">
+      <header>
+        <h1 class="heading-secondary heading-secondary-align">
+          Kudy do Mariánského údolí
+        </h1>
+        <p class="paragraph paragraph-align">
+          Autem, autobusem, tramvají nebo vlakem. Podívejte se, kudy k nám.
+          <br />
+          Do Mariánského údolí se snadno dostanete hned několika způsoby:
+        </p>
+      </header>
+
+      <div class="tabs">
+        <div class="tabs__container">
+          <button class="btn btn__main tab tab--active" data-tab="1">
+            Autem
+          </button>
+          <button class="btn btn__main tab" data-tab="2">Autobusem</button>
+          <button class="btn btn__main tab" data-tab="3">Tramvají</button>
+          <button class="btn btn__main tab" data-tab="4">Vlakem</button>
+          <button class="btn btn__main tab" data-tab="5">Parkování</button>
+        </div>
+        <div class="tabs__content tabs__content--1 tabs__content--active">
+          <p class="paragraph">
+            Údolí je vzdálené jen
+            <strong> několik minut jízdy od dálnice D1</strong> Stačí sjet z
+            dálnice na Exitu 207 u známého motorestu Rohlenka a vydat se po
+            staré brněnské cestě směr Brno-Slatina. Asi po 3 kilometrech
+            odbočíte vpravo a přes obec Podolí vjedete od jihu přímo do
+            Mariánského údolí.
+          </p>
+          <p class="paragraph">
+            Pokud k nám míříte z <strong> Brna</strong>, jeďte do Líšně a po
+            trase autobusu MHD č. 55 sjeďte mírným klesáním do Mariánského
+            údolí.
+          </p>
+        </div>
+        <div class="tabs__content tabs__content--2">
+          <p class="paragraph">
+            Do Mariánského údolí se dá dojet autobusem brněnské MHD č. 55, který
+            vyjíždí ze stanice<strong> Židenice, nádraží </strong> a po celé
+            trase umožňuje přepravu jízdních kol!
+          </p>
+        </div>
+
+        <div class="tabs__content tabs__content--3">
+          <p class="paragraph">
+            Do Mariánského údolí se dostanete i tramvají! Linka č. 8 ze Starého
+            Lískovce dojíždí <strong>do konečné stanice Mifkova</strong>, ze
+            které je to na nástupní místo už jen cca 1 km jízdy. Brněnský systém
+            MHD dovoluje přepravu jízdních kol v tramvaji, pokud je zde dostatek
+            místa a neohrožujete kolem ostatní cestující!
+          </p>
+        </div>
+
+        <div class="tabs__content tabs__content--4">
+          <p class="paragraph">
+            Vlaková zastávka<strong>Brno - Židenice</strong>je také dobrou
+            volbou. Odsud můžete nasednout na autobus MHD č. 55 s rozšířenou
+            přepravou jízdních kol.
+          </p>
+        </div>
+        <div class="tabs__content tabs__content--5">
+          <p class="paragraph">Za malý poplatek u Zábavního parku Eldorádo</p>
+          <p class="paragraph">
+            Nebo také cca 300 metrů blíže při vjezdu do údolí v okolí točny MHD,
+            tam je parkování zdarma, ale často bývá plno.
+          </p>
+          <p class="paragraph">
+            Menší, ale skryté a často volné parkoviště u restaurace U Raka.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <include src="project/templates/footer.html"></include>
-    <script src="../index.js"></script>
+    <script src="../tabs.js"></script>
   </body>
 </html>
