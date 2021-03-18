@@ -15,6 +15,7 @@
     }
 }
 
+// gallery - O trailech
 .gallery {
     display: grid;
     place-items: center;
@@ -49,6 +50,8 @@
     grid-area: img4;
 }
 
+
+// Jedovnice & Mariánské údolí - main image
 .frame__img {
     top: 35rem;
     right: 0;
@@ -58,9 +61,24 @@
     width: 50%;
     box-shadow: $box-shadow;
 }
-
+// Jedovnice & Mariánské údolí - frame images
 .trails-box__inner-img {
     height: 100%;
     border: 10px solid #fff;
     box-shadow: $box-shadow;
 }
+
+
+// Map section - Kudy k nám
+.map {
+display: flex;
+justify-content: center;
+max-width: $width-mid-screen;
+margin: auto;
+
+&__img {
+        border: 10px solid #fff;
+        box-shadow: $box-shadow;
+      }
+}
+
