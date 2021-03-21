@@ -19,6 +19,7 @@ Motivation
 
 ![](src/images/preview_SingleTrail.jpg )
 
+
 ## Getting Started
 
 Instructions how to setting up project locally.
@@ -40,6 +41,10 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    npm run dev
    ```
+
+
+![](src/images/preview_trails.jpg )
+
 
 ## Contact
 
