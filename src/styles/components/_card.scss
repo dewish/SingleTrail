@@ -66,10 +66,9 @@
     justify-content: flex-end;
     top: -25rem;
     z-index: 10;
-}
-
-.iframe-container iframe {
-    border-radius: 1rem;
-    box-shadow: $box-shadow;
-    width: 55%;
+    & iframe {
+        border-radius: 1rem;
+        box-shadow: $box-shadow;
+        width: 55%;
+    }
 }

@@ -50,7 +50,6 @@
     grid-area: img4;
 }
 
-
 // Jedovnice & Mariánské údolí - main image
 .frame__img {
     top: 35rem;
@@ -68,17 +67,14 @@
     box-shadow: $box-shadow;
 }
 
-
 // Map section - Kudy k nám
 .map {
-display: flex;
-justify-content: center;
-max-width: $width-mid-screen;
-margin: auto;
-
-&__img {
+    display: flex;
+    justify-content: center;
+    max-width: $width-mid-screen;
+    margin: auto;
+    &__img {
         border: 10px solid #fff;
         box-shadow: $box-shadow;
-      }
+    }
 }
-
