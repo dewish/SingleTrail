@@ -1,6 +1,7 @@
 // * ANIMATION with Gsap the main content
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import barba from "@barba/core";
 
 gsap.registerPlugin(ScrollTrigger);
 
