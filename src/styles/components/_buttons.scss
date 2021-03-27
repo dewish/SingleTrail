@@ -13,14 +13,43 @@
     cursor: pointer;
     margin-top: 2.5rem;
     letter-spacing: 0.1rem;
+
     &__main {
         background-color: rgba($color-button-1, 0.9);
+        &:hover,
+        :active {
+            color: $color-button-1;
+            background: $color-background;
+            transition: all 0.3s;
+            font-weight: bold;
+        }
     }
     &__secondary {
         background-color: $color-button-2;
+        &:hover,
+        :active {
+            color: $color-button-1;
+            background: $color-background;
+            transition: all 0.5s;
+        }
+        &__pomoc {
+            &:hover,
+            :active {
+                color: $color-background;
+                background: saturate($color-button-2, 10%);
+                transition: all 0.5s;
+            }
+        }
     }
     &__jedovnice {
         background-color: $color-background;
         color: rgb(70, 55, 34);
+        &:hover,
+        :active {
+            color: $color-background;
+            background: saturate($color-button-3, 18%);
+            transition: all 0.2s;
+            font-weight: bold;
+        }
     }
 }
