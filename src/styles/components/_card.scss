@@ -30,6 +30,7 @@
 // Section with Trail Hunter Video + Marisnaké_údolí
 
 .info-box {
+    position: relative;
     max-width: $width-mid-screen;
     margin: auto;
     padding: 15rem 5rem 0rem;
@@ -55,20 +56,22 @@
         &__jedovnice {
             background-color: $color-container-5;
         }
+        &__hunter {
+                       margin-bottom: 30rem;
+        }
     }
 }
 
 // Youtube video container
 
 .iframe-container {
-    display: flex;
-    position: relative;
-    justify-content: flex-end;
-    top: -25rem;
+    position: absolute;
+    top: 35rem;
+    right: 8rem;
     z-index: 10;
+    
     & iframe {
         border-radius: 1rem;
         box-shadow: $box-shadow;
-        width: 55%;
-    }
+            }
 }

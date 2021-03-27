@@ -18,7 +18,7 @@
         >
         <a class="btn btn__main anim1" href="jedovnice.html">Jedovnice</a>
 
-        <section class="cards">
+        <section class="cards" data-scroll data-scroll-speed="1">
           <div class="card">
             <div class="card__text">
               <h3>Přírodní Traily</h3>
@@ -90,7 +90,12 @@
     <include src="project/templates/newsletter.html"></include>
 
     <section class="info-box">
-      <div class="info-box__inner">
+      <div
+        class="info-box__inner info-box__inner__hunter"
+        data-scroll
+        data-scroll-direction="horizontal"
+        data-scroll-speed="-2"
+      >
         <h2 class="heading-secondary">
           Video recenze <br />
           Trail Hunter
@@ -99,12 +104,15 @@
           Projeďte si Mariánské údolí s Trail hunterem, projet si tak můžete
           všechny traily v Marianském údolí ale také Singletrail Jedovnice
         </p>
-        <button class="btn btn__secondary">Trail Hunter</button>
+        <a href="https://www.trailhunter.cz/singletrail-moravsky-kras-marianske-udoli-v-brne/" class="btn btn__secondary">Trail Hunter</a>
       </div>
-      <div class="iframe-container">
+      <div class="iframe-container ">
         <iframe
-          width="0"
-          height="380"
+          data-scroll
+          data-scroll-direction="horizontal"
+          data-scroll-speed="1"
+          width="720"
+          height="400"
           src="https://www.youtube.com/embed/mLAZi1Y_sQc"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
