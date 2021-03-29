@@ -16,6 +16,8 @@ Motivation
 * [SASS](https://sass-lang.com/)
 * [Parcel](https://parceljs.org/)
 * [PostHTML-include](https://www.npmjs.com/package/posthtml-include)
+* [Locomotive-scroll](https://github.com/locomotivemtl/locomotive-scroll)
+* [Gsap - GreenSock](https://greensock.com/gsap/)
 
 ![](src/images/preview_SingleTrail.jpg )
 
