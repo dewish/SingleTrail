@@ -6,6 +6,9 @@
     width: 100%;
     padding-top: 25%;
     margin: auto;
+    @include mq(small) {
+        flex-direction: column;
+    }
 }
 
 .card {
@@ -16,6 +19,9 @@
         background-color: rgba($color-primary, 0.7);
         padding: 2.5rem;
         font-size: $font-size-xs;
+        @include mq(small) {
+            width: 40%;
+        }
 
         h3 {
             padding-bottom: 2rem;
@@ -24,6 +30,14 @@
         p {
             line-height: 3.2rem;
         }
+    }
+    @include mq(xl-large) {
+        flex-direction: column-reverse;
+    }
+    @include mq(small) {
+        flex-direction: row;
+        justify-content: left;
+        padding-bottom: 3rem;
     }
 }
 
@@ -34,13 +48,20 @@
     max-width: $width-mid-screen;
     margin: auto;
     padding: 15rem 5rem 0rem;
-
+    &__hunter {
+        @include mq(xxl-large) {
+            display: flex;
+            justify-content: center;
+            padding: 8rem 3rem 35rem;
+        }
+    }
     &__inner {
         width: 62%;
         padding: 8rem;
         background-color: $color-container-2;
         border-radius: 1rem;
         box-shadow: $box-shadow;
+
         h2 {
             text-transform: uppercase;
             color: $color-white;
@@ -57,7 +78,21 @@
             background-color: $color-container-5;
         }
         &__hunter {
-                       margin-bottom: 30rem;
+            margin-bottom: 30rem;
+            @include mq(xxl-large) {
+                width: 70%;
+            }
+            @include mq(large) {
+                width: 90%;
+            }
+            p {
+                @include mq(xxl-large) {
+                    width: 75%;
+                }
+                @include mq(large) {
+                    width: 85%;
+                }
+            }
         }
     }
 }
@@ -69,9 +104,20 @@
     top: 35rem;
     right: 8rem;
     z-index: 10;
-    
+    @include mq(xxl-large) {
+        width: 67%;
+        right: auto;
+        top: 55%;
+    }
+    @include mq(large) {
+        width: 84.5%;
+    }
+
     & iframe {
         border-radius: 1rem;
         box-shadow: $box-shadow;
-            }
+        @include mq(xxl-large) {
+            width: 100%;
+        }
+    }
 }
