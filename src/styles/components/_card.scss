@@ -73,9 +73,33 @@
         }
         &__kras {
             background-color: $color-container-1;
+            @include mq(xl-large) {
+                width: 80%;
+              
+            }
+            @include mq(large) {
+                width: 85%;
+            }
+            p {
+                @include mq(xl-large) {
+                    width: 85%;
+                }
+            }
         }
         &__jedovnice {
             background-color: $color-container-5;
+            @include mq(xl-large) {
+                width: 80%;
+              
+            }
+            @include mq(large) {
+                width: 85%;
+            }
+            p {
+                @include mq(xl-large) {
+                    width: 85%;
+                }
+            }
         }
         &__hunter {
             margin-bottom: 30rem;
@@ -84,6 +108,9 @@
             }
             @include mq(large) {
                 width: 90%;
+            }
+            @include mq(smallest) {
+                padding: 4rem;
             }
             p {
                 @include mq(xxl-large) {

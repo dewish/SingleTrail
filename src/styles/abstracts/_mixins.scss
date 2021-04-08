@@ -3,10 +3,11 @@
 $breakpoinst: (
     xxl-large: 1290px, //1376px
     xl-large: 1240px, //1250px
+    large_1: 1065px, //1100px
     large: 1000px, //1100px
     medium: 800px, //900px
     small: 740px, //600px
-    smallest: 31.25em, //500px,
+    smallest: 660px, //500px,
 );
 
 @mixin mq($key) {

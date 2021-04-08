@@ -4,6 +4,9 @@
     margin-top: 15rem;
     background-color: $color-container-4;
     height: 100%;
+    @include mq(smallest) {
+        margin-top: 10rem;
+    }
     &__inner {
         width: 70%;
         padding: 8rem 6rem 13rem;
@@ -14,6 +17,7 @@
         @include mq(medium) {
             width: 90%;
         }
+
 
         &_pomoc {
             padding: 8rem 6rem 8rem;

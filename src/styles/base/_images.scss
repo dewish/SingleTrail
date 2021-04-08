@@ -59,12 +59,26 @@
     border-radius: 1rem;
     width: 50%;
     box-shadow: $box-shadow;
+    @include mq(xl-large) {
+        top: 42rem;
+    }
+    @include mq(large) {
+        top: 44.5rem;
+    }
 }
 // Jedovnice & Mariánské údolí - frame images
 .trails-box__inner-img {
     height: 100%;
     border: 10px solid #fff;
     box-shadow: $box-shadow;
+    @include mq(xl-large) {
+        object-fit: cover;
+        min-width: 35rem;
+        height: auto;
+    }
+    @include mq(large) {
+        min-width: 30rem;
+    }
 }
 
 // Map section - Kudy k nám
@@ -73,8 +87,23 @@
     justify-content: center;
     max-width: $width-mid-screen;
     margin: auto;
+    @include mq(large) {
+       flex-direction: column;
+       &:last-child {
+      margin-top: 5rem;
+    }
+    }
     &__img {
         border: 10px solid #fff;
         box-shadow: $box-shadow;
     }
 }
+
+// Map section - Kudy k nám
+.map__box{
+    padding: 8rem 8rem 20rem;
+    @include mq(large) {
+        padding: 0rem 8rem 10rem;
+     }
+  }
+  
