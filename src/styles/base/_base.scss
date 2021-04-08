@@ -28,12 +28,10 @@ body {
     padding: 18rem 5rem 8rem;
     margin: auto;
     position: relative;
+    @include mq(xl-large) {
+padding-top: 12rem;
+    
+  }
   }
 
-}
-
-
-// Map section - Kudy k nám
-.map__box{
-  padding: 8rem 8rem 20rem;
 }

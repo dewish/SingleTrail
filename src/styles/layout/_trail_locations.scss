@@ -3,6 +3,10 @@
     display: flex;
     text-align: center;
     padding-top: 7rem;
+    @include mq(xl-large) {
+        width: 40%;
+    }
+
     p {
         padding-left: 6%;
     }
@@ -14,6 +18,9 @@
         padding: 5rem 2rem 0rem;
         text-align: center;
         justify-content: space-between;
+        @include mq(large_1) {
+            padding: 5rem 0rem;
+        }
     }
 }
 
@@ -23,12 +30,21 @@
     &:last-child {
         padding-bottom: 22rem;
     }
+    @include mq(large) {
+        padding: 10rem 4rem;
+    }
 
     &__inner {
         padding: 1rem 5rem 0rem 0rem;
+        @include mq(xxl-large) {
+            padding-right: 2rem;
+        }
         &-2 {
             padding-left: 5rem;
             padding-right: 0;
+            @include mq(xxl-large) {
+                padding-left: 2rem;
+            }
         }
     }
 }
