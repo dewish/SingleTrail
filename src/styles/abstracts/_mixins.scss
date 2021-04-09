@@ -7,7 +7,7 @@ $breakpoinst: (
     large: 1000px, //1100px
     medium: 800px, //900px
     small: 740px, //600px
-    smallest: 660px, //500px,
+    smallest: 700px, //500px,
 );
 
 @mixin mq($key) {

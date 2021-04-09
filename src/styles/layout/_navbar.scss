@@ -25,6 +25,9 @@
             color: $color-container-3;
             transition: all 0.2s;
         }
+        @include mq(smallest) {
+            display: none;
+        }
     }
     &_container {
         display: flex;
