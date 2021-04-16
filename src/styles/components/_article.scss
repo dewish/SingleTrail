@@ -4,7 +4,7 @@
     margin-top: 15rem;
     background-color: $color-container-4;
     height: 100%;
-    @include mq(smallest) {
+    @include mq(xs) {
         margin-top: 10rem;
     }
     &__inner {
@@ -14,10 +14,9 @@
         text-align: center;
         display: grid;
         place-items: center;
-        @include mq(medium) {
+        @media (max-width: 800px) {
             width: 90%;
         }
-
 
         &_pomoc {
             padding: 8rem 6rem 8rem;

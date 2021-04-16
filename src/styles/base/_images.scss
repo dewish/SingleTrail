@@ -11,7 +11,8 @@
     }
     &__oTrailech {
         background-image: url(../images/Single_Trail_biker.jpg);
-        height: 108rem;
+        height: 75rem;
+        background-size: cover;
     }
 }
 
@@ -36,6 +37,10 @@
         box-shadow: $box-shadow;
         width: 100%;
     }
+    @include mq(sm) {
+        padding: 10rem 4rem 2rem;
+        gap: 1rem 1rem;
+    }
 }
 .img1 {
     grid-area: img1;
@@ -59,11 +64,14 @@
     border-radius: 1rem;
     width: 50%;
     box-shadow: $box-shadow;
-    @include mq(xl-large) {
+    @include mq(lg) {
         top: 42rem;
     }
-    @include mq(large) {
+    @include mq(md) {
         top: 44.5rem;
+    }
+    @media (max-width: 880px) {
+        display: none;
     }
 }
 // Jedovnice & Mariánské údolí - frame images
@@ -71,12 +79,12 @@
     height: 100%;
     border: 10px solid #fff;
     box-shadow: $box-shadow;
-    @include mq(xl-large) {
+    @include mq(lg) {
         object-fit: cover;
         min-width: 35rem;
         height: auto;
     }
-    @include mq(large) {
+    @include mq(md) {
         min-width: 30rem;
     }
 }
@@ -87,23 +95,25 @@
     justify-content: center;
     max-width: $width-mid-screen;
     margin: auto;
-    @include mq(large) {
-       flex-direction: column;
-       &:last-child {
-      margin-top: 5rem;
-    }
+    @include mq(md) {
+        flex-direction: column;
+        &:last-child {
+            margin-top: 5rem;
+        }
     }
     &__img {
         border: 10px solid #fff;
         box-shadow: $box-shadow;
+        @include mq(sm) {
+            max-width: 100%;
+        }
     }
 }
 
 // Map section - Kudy k nám
-.map__box{
+.map__box {
     padding: 8rem 8rem 20rem;
-    @include mq(large) {
+    @include mq(md) {
         padding: 0rem 8rem 10rem;
-     }
-  }
-  
+    }
+}
