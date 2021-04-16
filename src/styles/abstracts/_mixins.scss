@@ -1,17 +1,15 @@
 @use "sass:map";
 
-$breakpoinst: (
-    xxl-large: 1290px, //1376px
-    xl-large: 1240px, //1250px
-    large_1: 1065px, //1100px
-    large: 1000px, //1100px
-    medium: 800px, //900px
-    small: 740px, //600px
-    smallest: 700px, //500px,
+$breakpoints: (
+    xs: 700px,
+    sm: 740px,
+    md: 1000px,
+    lg: 1240px,
+    xl: 1290px
 );
 
 @mixin mq($key) {
-    $size: map.get($breakpoinst, $key);
+    $size: map.get($breakpoints, $key);
     @media  only screen and (max-width: $size) {
         @content;
     }

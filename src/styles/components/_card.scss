@@ -6,7 +6,7 @@
     width: 100%;
     padding-top: 25%;
     margin: auto;
-    @include mq(small) {
+    @include mq(sm) {
         flex-direction: column;
     }
 }
@@ -19,10 +19,9 @@
         background-color: rgba($color-primary, 0.7);
         padding: 2.5rem;
         font-size: $font-size-xs;
-        @include mq(small) {
+        @include mq(sm) {
             width: 40%;
         }
-
         h3 {
             padding-bottom: 2rem;
             font-size: $font-size-s;
@@ -31,10 +30,10 @@
             line-height: 3.2rem;
         }
     }
-    @include mq(xl-large) {
+    @include mq(lg) {
         flex-direction: column-reverse;
     }
-    @include mq(small) {
+    @include mq(sm) {
         flex-direction: row;
         justify-content: left;
         padding-bottom: 3rem;
@@ -48,8 +47,8 @@
     max-width: $width-mid-screen;
     margin: auto;
     padding: 15rem 5rem 0rem;
-    &__hunter {
-        @include mq(xxl-large) {
+    &__trail-hunter {
+        @include mq(xl) {
             display: flex;
             justify-content: center;
             padding: 8rem 3rem 35rem;
@@ -71,57 +70,51 @@
             width: 62%;
             padding-bottom: 2rem;
         }
-        &__kras {
-            background-color: $color-container-1;
-            @include mq(xl-large) {
-                width: 80%;
-              
-            }
-            @include mq(large) {
-                width: 85%;
-            }
-            p {
-                @include mq(xl-large) {
-                    width: 85%;
-                }
-            }
-        }
-        &__jedovnice {
-            background-color: $color-container-5;
-            @include mq(xl-large) {
-                width: 80%;
-              
-            }
-            @include mq(large) {
-                width: 85%;
-            }
-            p {
-                @include mq(xl-large) {
-                    width: 85%;
-                }
-            }
-        }
-        &__hunter {
-            margin-bottom: 30rem;
-            @include mq(xxl-large) {
-                width: 70%;
-            }
-            @include mq(large) {
-                width: 90%;
-            }
-            @include mq(smallest) {
-                padding: 4rem;
-            }
-            p {
-                @include mq(xxl-large) {
-                    width: 75%;
-                }
-                @include mq(large) {
-                    width: 85%;
-                }
-            }
+    }
+}
+
+.trail-hunter {
+    margin-bottom: 30rem;
+    @include mq(xl) {
+        width: 70%;
+        p {
+            width: 75%;
         }
     }
+    @include mq(md) {
+        width: 90%;
+        p {
+            width: 85%;
+        }
+    }
+    @include mq(xs) {
+        padding: 4rem;
+    }
+}
+
+.marianske-udoli,
+.jedovnice {
+    background-color: $color-container-1;
+    @include mq(lg) {
+        width: 80%;
+        p {
+            width: 85%;
+        }
+    }
+    @include mq(md) {
+        width: 85%;
+    }
+    @media (max-width: 880px) {
+        width: 100%;
+        padding: 5rem;
+        p {
+            width: 100%;
+        }
+    }
+}
+
+.jedovnice {
+    background-color: $color-container-5;
 }
 
 // Youtube video container
@@ -131,19 +124,19 @@
     top: 35rem;
     right: 8rem;
     z-index: 10;
-    @include mq(xxl-large) {
+    @include mq(xl) {
         width: 67%;
         right: auto;
         top: 55%;
     }
-    @include mq(large) {
+    @include mq(md) {
         width: 84.5%;
     }
 
     & iframe {
         border-radius: 1rem;
         box-shadow: $box-shadow;
-        @include mq(xxl-large) {
+        @include mq(xl) {
             width: 100%;
         }
     }

@@ -54,22 +54,3 @@
     }
 }
 
-
-.hamburger {
-    background-color: transparent;
-    border: none;
-    color: $color-white;
-    font-size: 3rem;
-    cursor: pointer;
-    display: none;
-    right: 8%;
-    &:hover {
-        color: $color-button-2;
-    }
-    @include mq(smallest) {
-        display: flex;
-    }
-    &:focus {
-        outline: none;
-    }
-}

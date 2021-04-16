@@ -5,6 +5,10 @@
   margin: 12rem auto 0 auto;
   background-color: #fff;
   box-shadow: $box-shadow;
+
+  @include mq(md) {
+    width: 100%;
+  }
   &__container {
     display: flex;
     justify-content: center;
@@ -12,11 +16,21 @@
   &__box {
     padding-bottom: 10rem;
     padding-top: 18rem;
+    &-inner {
+      max-width: $width-mid-screen;
+      margin: auto;
+    }
+    @include mq(md) {
+      padding-top: 12rem;
+    }
   }
   &__content {
     display: none;
     padding: 4rem 14rem 6rem;
     text-align: center;
+    @include mq(md) {
+      padding: 4rem 10rem 6rem;
+    }
     &--active {
       display: grid;
       grid-template-columns: 1fr;
@@ -31,6 +45,12 @@
   margin-right: 2.5rem;
   transform: translateY(-100%);
   background-color: $color-button-3;
+  @include mq(md) {
+    margin-right: 1rem;
+  }
+  &:last-child {
+    margin-right: 0rem;
+  }
   &:hover {
     background-color: lighten($color-button-3, 10%);
   }

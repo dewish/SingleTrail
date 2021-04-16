@@ -28,12 +28,16 @@
             transform: translate(50%, -50%);
         }
     }
+    @include mq(sm) {
+        height: 35rem;
+    }
 }
 
 .slide {
     position: absolute;
     display: grid;
     place-items: center;
+    left: 0;
     transition: transform 1.5s;
     &__inner {
         width: 60%;
@@ -41,6 +45,9 @@
         text-align: center;
         p {
             line-height: 3rem;
+        }
+        @include mq(sm) {
+            width: 70%;
         }
     }
 }
@@ -67,5 +74,7 @@
             background-color: $color-grey-dark;
             opacity: 1;
         }
+    }
+    @include mq(sm) {
     }
 }

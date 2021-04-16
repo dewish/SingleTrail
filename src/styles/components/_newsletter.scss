@@ -12,7 +12,7 @@
     z-index: 100;
     top: -8rem;
     box-shadow: $box-shadow;
-    @include mq(smallest) {
+    @include mq(xs) {
       width: 82%;
     }
     &__box {
