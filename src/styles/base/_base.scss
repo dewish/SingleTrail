@@ -30,5 +30,8 @@ body {
     @include mq(lg) {
       padding-top: 12rem;
     }
+    @media (max-width: 880px) {
+      padding-bottom: 0rem;
+    }
   }
 }
