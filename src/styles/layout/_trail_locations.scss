@@ -7,7 +7,6 @@
         width: 40%;
     }
     @media (max-width: 880px) {
-     
         width: 100%;
     }
 
@@ -34,10 +33,25 @@
     &:last-child {
         padding-bottom: 22rem;
     }
-    @include mq(md) {
-        padding: 6rem 2em;
+    @media (max-width: 1120px) {
+        padding: 8rem 4rem;
         &:last-child {
-            padding-bottom: 8rem;
+            padding-bottom: 10rem;
+        }
+    }
+
+    @media (max-width: 1020px) {
+        padding: 6rem 1rem;
+    }
+    @media (max-width: 880px) {
+        flex-direction: column-reverse;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        &:nth-child(2) {
+            flex-direction: column;
+        }
+        &:last-child {
+            padding-bottom: 5rem;
         }
     }
 
