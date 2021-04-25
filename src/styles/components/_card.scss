@@ -13,6 +13,9 @@
 
 .card {
     display: flex;
+    img {
+        max-width: 20rem;
+    }
 
     &__text {
         color: $color-white;
@@ -21,6 +24,9 @@
         font-size: $font-size-xs;
         @include mq(sm) {
             width: 40%;
+        }
+        @media (max-width: 590px) {
+            width: 60%;
         }
         h3 {
             padding-bottom: 2rem;
