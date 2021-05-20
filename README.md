@@ -1,6 +1,8 @@
 # :biking_man: Single Trail :biking_man:
 This project was created for learning purposes. 
 
+# :biking_man: Click [here](https://main.d43f9j5bvojsp.amplifyapp.com/) to see SingleTrail project. :biking_man:
+
 ## About the project
 ### 🛠️ The website is still in the process. 🛠️
 
